@@ -4,11 +4,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router>
         <Routes>
           <Route Component={Home} path="/home"></Route>
         </Routes>
-      </Router>
+      </Router> */}
     </div>
   );
 }
