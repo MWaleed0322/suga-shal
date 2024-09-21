@@ -3,36 +3,30 @@ import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 
 const Header = () => {
   return (
-    <header>
-      <div className="menuSec">
-        <Container>
-          <Navbar fixed='top' expand="md">
-            <Container>
-              {/* Logo */}
-              <Navbar.Brand href="index.html">Suga Shal</Navbar.Brand>
-
-              {/* Navbar Toggle for mobile view */}
-              <Navbar.Toggle aria-controls="menu" />
-
-              {/* Navbar Links */}
-              <Navbar.Collapse id="menu">
-                <Nav className="mx-auto">
-                  <Nav.Link href="index.html">Home</Nav.Link>
-                  <Nav.Link href="about.html">About</Nav.Link>
-                  <Nav.Link href="menu.html">Menu</Nav.Link>
-                  <Nav.Link href="career.html">Careers</Nav.Link>
-                  <Nav.Link href="contact.html">Contact</Nav.Link>
-                </Nav>
-                {/* Button */}
-                <div className="text-right">
-                  <Button href="#" className="theme1">Place Order</Button>
-                </div>
-              </Navbar.Collapse>
-            </Container>
-          </Navbar>
-        </Container>
-      </div>
-    </header >
+    <Navbar expand="md" className="rounded">
+      <Container>
+        {/* Brand/Logo */}
+        <Navbar.Brand href="https://flowbite-react.com">
+          {/* <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" /> */}
+          <span className="self-center text-xl font-semibold">Flowbite React</span>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mx-auto">
+            <Nav.Link href="#" active>
+              Home
+            </Nav.Link>
+            <Nav.Link href="#">About</Nav.Link>
+            <Nav.Link href="#">Services</Nav.Link>
+            <Nav.Link href="#">Pricing</Nav.Link>
+            <Nav.Link href="#">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+        <div className="d-flex">
+          <Button variant="primary">Get started</Button>
+        </div>
+      </Container>
+    </Navbar>
   );
 };
 
