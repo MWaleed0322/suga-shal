@@ -1,15 +1,26 @@
 import React from 'react'
 // import "./styles/globals.css";
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import { Col, Container, Row } from 'react-bootstrap';
 
 
 export default function Home() {
+  const settings = {
+    dots: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  };
+
   return (
     <>
-      <Header />
       <section className="main_slider">
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
@@ -160,9 +171,9 @@ export default function Home() {
       </section>
 
       <section className="client-sec">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
+        <Container>
+          <Row>
+            <Col md="12" sm="12">
               <div className="Client-heading">
                 <h2>Check What Our <span>Clients</span> Are Saying</h2>
                 <p>
@@ -172,14 +183,16 @@ export default function Home() {
                   bite promises a burst of flavor.
                 </p>
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
 
-          <div className="row mt-5">
-            <div className="col-md-5">
-              <div className="client-slider">
-                <div className="client-img">
-                  <img src="images/client.jfif" alt="Client" />
+          <Row className='mt-5'>
+            <Col md="5">
+              <Slider {...settings}>
+                <div>
+                  <div className="client-img">
+                    <img src="images/client.jfif" alt="Client" />
+                  </div>
                 </div>
                 <div className="client-img">
                   <img src="images/client.jfif" alt="Client" />
@@ -187,9 +200,9 @@ export default function Home() {
                 <div className="client-img">
                   <img src="images/client.jfif" alt="Client" />
                 </div>
-              </div>
-            </div>
-            <div className="col-md-7">
+              </Slider>
+            </Col>
+            <Col md="7">
               <div className="client-review">
                 <i className="fa-solid fa-quote-left"></i>
                 <div className="star-box">
@@ -207,12 +220,10 @@ export default function Home() {
                 <h5>Jessica Thompson</h5>
                 <h6>Marketing Manager at Bright Ideas Inc.</h6>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
-
-      <Footer />
 
     </>
   )
