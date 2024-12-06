@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaUser } from 'react-icons/fa'
+import { FaRegUser } from 'react-icons/fa6'
 
 export default function Footer() {
     return (
@@ -14,7 +14,9 @@ export default function Footer() {
                             <form>
                                 <input type="email" name="email" placeholder="Enter your email address" />
                                 <button type="submit">Subscribe</button>
-                                <FaUser className="" />
+                                <div className='newsletter_secc-form-i'>
+                                    <FaRegUser />
+                                </div>
                             </form>
                         </div>
                     </div>

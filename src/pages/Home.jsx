@@ -6,10 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { Col, Container, Row } from 'react-bootstrap';
+import { FaCompactDisc, FaMartiniGlass } from 'react-icons/fa6';
+import { PiHamburgerBold } from 'react-icons/pi';
 
 
 export default function Home() {
-  const settings = {
+  const clientslider = {
     dots: true,
     speed: 500,
     slidesToShow: 1,
@@ -140,7 +142,9 @@ export default function Home() {
                 <div className="row">
                   <div className="col-lg-4">
                     <div className="mission-detail-box">
-                      <i className="fa-light fa-burger-lettuce"></i>
+                      <div className='mission-detail-box-i'>
+                        <PiHamburgerBold />
+                      </div>
                       <h5>Food</h5>
                       <p>Classic fast food item consisting of a grilled or fried patty served inside a sliced bun.
                         Toppings often include lettuce.</p>
@@ -148,7 +152,9 @@ export default function Home() {
                   </div>
                   <div className="col-lg-4">
                     <div className="mission-detail-box">
-                      <i className="fa-solid fa-martini-glass"></i>
+                      <div className='mission-detail-box-i'>
+                        <FaMartiniGlass />
+                      </div>
                       <h5>Drinks</h5>
                       <p>Classic fast food item consisting of a grilled or fried patty served inside a sliced bun.
                         Toppings often include lettuce.</p>
@@ -156,7 +162,9 @@ export default function Home() {
                   </div>
                   <div className="col-lg-4">
                     <div className="mission-detail-box">
-                      <i className="fa-solid fa-compact-disc"></i>
+                      <div className="mission-detail-box-i">
+                        <FaCompactDisc />
+                      </div>
                       <h5>Lively Music</h5>
                       <p>Classic fast food item consisting of a grilled or fried patty served inside a sliced bun.
                         Toppings often include lettuce.</p>
@@ -188,7 +196,7 @@ export default function Home() {
 
           <Row className='mt-5'>
             <Col md="5">
-              <Slider {...settings}>
+              <Slider className='client-slider' {...clientslider}>
                 <div>
                   <div className="client-img">
                     <img src="images/client.jfif" alt="Client" />

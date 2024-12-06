@@ -955,7 +955,7 @@ section.career-sec {
 }
 
 
-.mission-detail-box i {
+.mission-detail-box-i {
     border: 1px solid;
     border-image-source: linear-gradient(90deg, rgba(237, 238, 239, 0.35) 0%, #313131 49.5%, rgba(237, 238, 239, 0.35) 100%);
     box-shadow: 1px 17px 55px 0px #1B1B1B38;
@@ -968,6 +968,11 @@ section.career-sec {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+}
+
+.mission-detail-box-i svg {
+    height: 35px;
+    width: 35px;
 }
 
 .mission-detail-box h5 {
@@ -1539,10 +1544,10 @@ section.experience-sec {
     font-size: 14px;
 }
 
-.newsletter_secc form>i {
+.newsletter_secc-form-i {
     position: absolute;
     left: 17px;
-    top: 18px;
+    top: 12px;
     font-weight: 300;
     color: #FFFFFFB8;
     font-size: 17px;
