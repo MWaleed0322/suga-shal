@@ -12,10 +12,11 @@ html {
 }
 
 a {
-    text-decoration: none;
     color: #28b16d;
     white-space: initial;
+    text-decoration: none;
     display: inline-block;
+    text-decoration: none !important;
 }
 
 a:hover,
@@ -525,7 +526,7 @@ section.main_slider {
 
 .new-banner-css {
     position: relative;
-    height: 600px;
+    height: 600px !important;
 }
 
 .postion-a {
@@ -584,12 +585,10 @@ section.main_slider {
 
 }
 
-
 .about-bottom-slider-card-txt p {
     font-size: 14px;
     margin-top: 10px;
 }
-
 
 .botom_para h4 {
     font-size: 40px;
@@ -629,13 +628,13 @@ section.main_slider {
     top: 0;
     width: 100%;
     height: 100%;
-    left: 0;
-    right: 0;
     margin: 0;
     padding: 0;
     color: #fff;
     text-align: left;
+    left: 0 !important;
     display: -webkit-box;
+    right: 0 !important;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1019,10 +1018,11 @@ section.mission-sec {
 }
 
 .vision-img span {
+    rotate: 180deg;
     writing-mode: tb;
     margin-left: 25px;
     margin-right: 25px;
-    rotate: 180deg;
+    font-family: 'Poppins';
 }
 
 .vision-img img {

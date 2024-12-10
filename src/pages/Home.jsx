@@ -1,12 +1,12 @@
 import React from 'react'
-// import "./styles/globals.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import "../styles/globals.css";
 import { Col, Container, Row } from 'react-bootstrap';
-import { FaCompactDisc, FaMartiniGlass } from 'react-icons/fa6';
+import { FaArrowRight, FaCompactDisc, FaMartiniGlass } from 'react-icons/fa6';
 import { PiHamburgerBold } from 'react-icons/pi';
 
 
@@ -41,7 +41,7 @@ export default function Home() {
                           viverra.
                         </p>
                         <a href="about.html" className="theme1">
-                          Make a Reservation <i className="fa-solid fa-arrow-right"></i>
+                          Make a Reservation <FaArrowRight />
                         </a>
                       </div>
                     </div>

@@ -6,16 +6,16 @@ const Header = () => {
     <Navbar expand="md" className="rounded">
       <Container>
         {/* Brand/Logo */}
-        <Navbar.Brand href="https://flowbite-react.com">
+        <Navbar.Brand href="/">
           {/* <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" /> */}
           <span className="self-center text-xl font-semibold">Flowbite React</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link href="#" active>Home </Nav.Link>
+            <Nav.Link href="/" active>Home </Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="#">Menu</Nav.Link>
+            <Nav.Link href="/menu">Menu</Nav.Link>
             <Nav.Link href="#">Careers</Nav.Link>
             <Nav.Link href="#">Contact</Nav.Link>
           </Nav>
