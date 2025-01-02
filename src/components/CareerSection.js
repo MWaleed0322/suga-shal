@@ -1,5 +1,7 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
+import { FaArrowRight, FaCompactDisc, FaMartiniGlass } from 'react-icons/fa6'
+import { PiHamburgerBold } from 'react-icons/pi'
 import { Link } from 'react-router-dom'
 
 function CareerSection() {
@@ -30,22 +32,39 @@ function CareerSection() {
                                 burgers to fresh.
                             </p>
                             <Row>
-                                {[
-                                    { icon: "fa-light fa-burger-lettuce", title: "Food", text: "Classic fast food item consisting of a grilled or fried patty served inside a sliced bun. Toppings often include lettuce." },
-                                    { icon: "fa-solid fa-martini-glass", title: "Drinks", text: "Classic fast food item consisting of a grilled or fried patty served inside a sliced bun. Toppings often include lettuce." },
-                                    { icon: "fa-solid fa-compact-disc", title: "Lively Music", text: "Classic fast food item consisting of a grilled or fried patty served inside a sliced bun. Toppings often include lettuce." },
-                                ].map((item, index) => (
-                                    <div className="col-lg-4" key={index}>
-                                        <div className="mission-detail-box">
-                                            <i className={item.icon}></i>
-                                            <h5>{item.title}</h5>
-                                            <p>{item.text}</p>
+                                <div className="col-lg-4">
+                                    <div className="mission-detail-box">
+                                        <div className='mission-detail-box-i'>
+                                            <PiHamburgerBold />
                                         </div>
+                                        <h5>Food</h5>
+                                        <p>Classic fast food item consisting of a grilled or fried patty served inside a sliced bun.
+                                            Toppings often include lettuce.</p>
                                     </div>
-                                ))}
+                                </div>
+                                <div className="col-lg-4">
+                                    <div className="mission-detail-box">
+                                        <div className='mission-detail-box-i'>
+                                            <FaMartiniGlass />
+                                        </div>
+                                        <h5>Drinks</h5>
+                                        <p>Classic fast food item consisting of a grilled or fried patty served inside a sliced bun.
+                                            Toppings often include lettuce.</p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4">
+                                    <div className="mission-detail-box">
+                                        <div className="mission-detail-box-i">
+                                            <FaCompactDisc />
+                                        </div>
+                                        <h5>Lively Music</h5>
+                                        <p>Classic fast food item consisting of a grilled or fried patty served inside a sliced bun.
+                                            Toppings often include lettuce.</p>
+                                    </div>
+                                </div>
                             </Row>
                             <Link href="">
-                                Check Menu <i className="fa-solid fa-arrow-right"></i>
+                                Check Menu <FaArrowRight />
                             </Link>
                         </div>
                     </div>

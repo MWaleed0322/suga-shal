@@ -8,6 +8,8 @@ import "../styles/globals.css";
 import { Col, Container, Row } from 'react-bootstrap';
 import { FaArrowRight, FaCompactDisc, FaMartiniGlass } from 'react-icons/fa6';
 import { PiHamburgerBold } from 'react-icons/pi';
+import CareerSection from '../components/CareerSection';
+import ClientSliderSec from '../components/clientSliderSec';
 
 
 export default function Home() {
@@ -90,7 +92,7 @@ export default function Home() {
                 <p>
                   To provide a lively atmosphere where people can enjoy quality food, drinks, and music.
                 </p>
-                <a href="about.html">
+                <a href="about">
                   Learn More <i className="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
@@ -118,120 +120,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="career-sec">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-5">
-              <div className="mission-img">
-                <img src="images/mission.jfif" alt="Mission" />
-              </div>
-              <div className="vision-img visionimg">
-                <span>
-                  <h5>1211 N Country Club Dr #9</h5> Experience difference with our premium fast
-                </span>
-                <img src="images/vision.jfif" alt="Vision" />
-              </div>
-            </div>
-            <div className="col-md-7">
-              <div className="career-txt">
-                <h1><b>bar, live</b> <span>Music</span> <b>events,</b> and delicious food.</h1>
-                <p className="mb-5">
-                  Experience the difference with our premium fast food offerings. From flame-grilled burgers to fresh-cut fries,
-                  every item on our menu is crafted to perfection, ensuring a satisfying meal every time.
-                </p>
-                <div className="row">
-                  <div className="col-lg-4">
-                    <div className="mission-detail-box">
-                      <div className='mission-detail-box-i'>
-                        <PiHamburgerBold />
-                      </div>
-                      <h5>Food</h5>
-                      <p>Classic fast food item consisting of a grilled or fried patty served inside a sliced bun.
-                        Toppings often include lettuce.</p>
-                    </div>
-                  </div>
-                  <div className="col-lg-4">
-                    <div className="mission-detail-box">
-                      <div className='mission-detail-box-i'>
-                        <FaMartiniGlass />
-                      </div>
-                      <h5>Drinks</h5>
-                      <p>Classic fast food item consisting of a grilled or fried patty served inside a sliced bun.
-                        Toppings often include lettuce.</p>
-                    </div>
-                  </div>
-                  <div className="col-lg-4">
-                    <div className="mission-detail-box">
-                      <div className="mission-detail-box-i">
-                        <FaCompactDisc />
-                      </div>
-                      <h5>Lively Music</h5>
-                      <p>Classic fast food item consisting of a grilled or fried patty served inside a sliced bun.
-                        Toppings often include lettuce.</p>
-                    </div>
-                  </div>
-                </div>
-                <a href="menu.html">Check Menu <i className="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CareerSection />
 
-      <section className="client-sec">
-        <Container>
-          <Row>
-            <Col md="12" sm="12">
-              <div className="Client-heading">
-                <h2>Check What Our <span>Clients</span> Are Saying</h2>
-                <p>
-                  Discover a culinary adventure at [Restaurant Name], where our expertly crafted menu offers a
-                  variety of mouthwatering options to satisfy every craving. From our signature gourmet burgers,
-                  made with the freshest ingredients and cooked to perfection, to our crispy, golden sides, every
-                  bite promises a burst of flavor.
-                </p>
-              </div>
-            </Col>
-          </Row>
-
-          <Row className='mt-5'>
-            <Col md="5">
-              <Slider className='client-slider' {...clientslider}>
-                <div>
-                  <div className="client-img">
-                    <img src="images/client.jfif" alt="Client" />
-                  </div>
-                </div>
-                <div className="client-img">
-                  <img src="images/client.jfif" alt="Client" />
-                </div>
-                <div className="client-img">
-                  <img src="images/client.jfif" alt="Client" />
-                </div>
-              </Slider>
-            </Col>
-            <Col md="7">
-              <div className="client-review">
-                <i className="fa-solid fa-quote-left"></i>
-                <div className="star-box">
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. In sit sit dolor quam libero posuere adipiscing.
-                  Enim risus consequat nisl nunc ut ullamcorper pellentesque egestas nunc. Euismod malesuada
-                  sit diam aliquam sit eget.
-                </p>
-                <h5>Jessica Thompson</h5>
-                <h6>Marketing Manager at Bright Ideas Inc.</h6>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <ClientSliderSec />
 
     </>
   )
