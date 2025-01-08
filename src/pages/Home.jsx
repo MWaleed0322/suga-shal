@@ -93,7 +93,7 @@ export default function Home() {
                   To provide a lively atmosphere where people can enjoy quality food, drinks, and music.
                 </p>
                 <a href="about">
-                  Learn More <i className="fa-solid fa-arrow-right"></i>
+                  Learn More <FaArrowRight />
                 </a>
               </div>
             </div>
