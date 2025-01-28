@@ -2,7 +2,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import "./styles/globals.css";
 import Home from './pages/Home';
-import menu from './pages/menu';
+import menu from './pages/Menu';
 import About from './pages/About';
 import Career from './pages/Career';
 import Contact from './pages/Contact';
