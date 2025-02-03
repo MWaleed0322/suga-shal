@@ -37,7 +37,6 @@ export default function Menu() {
             <section className="main_slder">
                 <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                     <img src="images/banner.png" className="img-fluid main-banner-img new-banner-css" alt="..." />
-
                     <div className="container postion-a">
                         <div className="row">
                             <div className="col-xl-7 col-lg-7 col-md-8 col-sm-12 col-12">
@@ -61,10 +60,8 @@ export default function Menu() {
                         <div className="col-lg-12 col-md-12 col-12">
                             <div className="our-services-heading text-center">
                                 <h2>Sizzling Gourmet Burgers and Savory Sides A Feast of Flavor at Suga Shal</h2>
-                                <p>
-                                    Discover a culinary adventure at [Restaurant Name], where our expertly crafted menu
-                                    offers a variety of mouthwatering options to satisfy every craving.
-                                </p>
+                                <p>Discover a culinary adventure at [Restaurant Name], where our expertly crafted menu
+                                    offers a variety of mouthwatering options to satisfy every craving.</p>
                             </div>
                         </div>
                     </div>
@@ -78,8 +75,7 @@ export default function Menu() {
                                         <button
                                             className={`nav-link ${activeTab === tab ? "active" : ""}`}
                                             onClick={() => setActiveTab(tab)}
-                                        >
-                                            {tab}
+                                        >{tab}
                                         </button>
                                     </li>
                                 ))}

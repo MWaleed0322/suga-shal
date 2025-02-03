@@ -1,10 +1,32 @@
 import React from 'react'
-import { Container, Row } from 'react-bootstrap'
-import { FaArrowRight, FaCompactDisc, FaMartiniGlass } from 'react-icons/fa6'
-import { PiHamburgerBold } from 'react-icons/pi'
 import { Link } from 'react-router-dom'
+import { Container, Row } from 'react-bootstrap'
+import { PiHamburgerBold } from 'react-icons/pi'
+import { FaArrowRight, FaCompactDisc, FaMartiniGlass } from 'react-icons/fa6'
 
 function CareerSection() {
+
+    const missionDetails = [
+        {
+            icon: <PiHamburgerBold />,
+            title: "Food",
+            description:
+                "Classic fast food item consisting of a grilled or fried patty served inside a sliced bun. Toppings often include lettuce.",
+        },
+        {
+            icon: <FaMartiniGlass />,
+            title: "Drinks",
+            description:
+                "Refreshing beverages served with meals, including soft drinks, coffee, and juices.",
+        },
+        {
+            icon: <FaCompactDisc />,
+            title: "Lively Music",
+            description:
+                "Enjoy energetic music that enhances your dining experience and sets the perfect ambiance.",
+        },
+    ];
+
     return (
         <section className="career-sec">
             <Container>
@@ -32,38 +54,17 @@ function CareerSection() {
                                 burgers to fresh.
                             </p>
                             <Row>
-                                <div className="col-lg-4">
-                                    <div className="mission-detail-box">
-                                        <div className='mission-detail-box-i'>
-                                            <PiHamburgerBold />
+                                {missionDetails.map((item, index) => (
+                                    <div className="col-lg-4" key={index}>
+                                        <div className="mission-detail-box">
+                                            <div className="mission-detail-box-i">{item.icon}</div>
+                                            <h5>{item.title}</h5>
+                                            <p>{item.description}</p>
                                         </div>
-                                        <h5>Food</h5>
-                                        <p>Classic fast food item consisting of a grilled or fried patty served inside a sliced bun.
-                                            Toppings often include lettuce.</p>
                                     </div>
-                                </div>
-                                <div className="col-lg-4">
-                                    <div className="mission-detail-box">
-                                        <div className='mission-detail-box-i'>
-                                            <FaMartiniGlass />
-                                        </div>
-                                        <h5>Drinks</h5>
-                                        <p>Classic fast food item consisting of a grilled or fried patty served inside a sliced bun.
-                                            Toppings often include lettuce.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4">
-                                    <div className="mission-detail-box">
-                                        <div className="mission-detail-box-i">
-                                            <FaCompactDisc />
-                                        </div>
-                                        <h5>Lively Music</h5>
-                                        <p>Classic fast food item consisting of a grilled or fried patty served inside a sliced bun.
-                                            Toppings often include lettuce.</p>
-                                    </div>
-                                </div>
+                                ))}
                             </Row>
-                            <Link href="">
+                            <Link to="menu">
                                 Check Menu <FaArrowRight />
                             </Link>
                         </div>

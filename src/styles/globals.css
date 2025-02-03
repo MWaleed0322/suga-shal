@@ -992,12 +992,16 @@ section.mission-sec {
 
 /*Inner Contact Start*/
 
-
-
 .contact_form {
     padding-bottom: 7%;
     padding-top: 100px;
     background: #090e11;
+}
+
+.contact_form p {
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
 }
 
 .btn_wrap button {
@@ -1589,7 +1593,13 @@ footer .footer_apps>ul>li>a {
 
 @media only screen and (min-width: 992px) and (max-width: 1290px) {}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .menuSec a {
+        font-size: 15px;
+        line-height: 30px;
+        padding: 8px 15px !important;
+    }
+}
 
 @media only screen and (min-width: 520px) and (max-width: 767px) {
     .team-heading {

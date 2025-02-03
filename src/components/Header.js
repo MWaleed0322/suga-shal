@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import React from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const Header = () => {
   return (
@@ -19,8 +19,8 @@ const Header = () => {
               <Nav.Link href="/contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <div className="d-flex">
-            <Button>Get started</Button>
+          <div className="d-flex header-btn">
+            <a href='/contact'>Place Order</a>
           </div>
         </Container>
       </Navbar>
